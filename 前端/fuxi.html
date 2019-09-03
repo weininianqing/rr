@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复习</title>
+</head>
+<body>
+ <!--图像标签 img(但标签 不需要闭合)
+            src: 图片的地址(网络资源或者本地资源)
+            alt:用于图片加载失败的替代文字 (必须存在)
+            title:鼠标选题在图片上的提示信息(可写可不写)
+            width:设置图片的宽度
+            height:设置图片的高度
+            注意:一般我们只给图片宽度或者只设置高度,那高度或者宽度会等比例放大或者缩小
+          -->
+        <img src="images/ww.jpg" alt="这是一张图片" height="300px" title="图片">
+ <!--表格标签 table声明一个表格 th表头 tr行 td列-->
+        <!--声明一个表格-->
+        <!--
+            table 的属性 : width   设置单元格的总体宽度
+                            height  设置单元格的总体高度
+                            border 设置边框是否显示
+                            cellpadding 设置表格当中内容距离边框间距
+                            cellspacing 设置表格和表格之间的间距
+             单元格合并 :colspan  设置水平方向一个单元格占据的宽度
+                         rowspan  设置垂直方一个单元格占据的高度
+             单元格内容的对齐方式: align 水平对齐方式 默认是靠左显示   center  right
+                                    valign 处置对齐方式 默认垂直居中   top    bottom
+                                    注意:如果给tr设置  会影响整行 给td设置只影响当前的单元格
+              th 标签代表表头  默认水平居中  并且有加粗效果
+
+        -->
+<table border="1" cellspacing="0"  width="800px" height="700px">
+    <tr>
+        <th colspan="4" align="center" valign="bottom">第一个</th>
+
+
+    </tr>
+    <tr>
+        <td rowspan="2" align="center" valign="top">这是第二行第一列</td>
+        <td>这是第二行第二列</td>
+        <td>这是第二行第三列</td>
+        <td>这是第二行第四列</td>
+
+    </tr>
+    <tr>
+
+        <td>这是第三行第二列</td>
+        <td>这是第三行第三列</td>
+        <td>这是第三行第四列</td>
+
+    </tr>
+    <a href="day01.html" target="_blank">跳转到表单</a>
+
+
+
+</table>
+</body>
+</html>
